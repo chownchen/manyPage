@@ -10,13 +10,20 @@
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 </head>
 
-
 <body>
 	<div id="test">
 		这是首页
 		<p class="info">
 			这是一个段落说明!
 		</p>
+        <div id="bb">
+        </div>
+
+        <script type="text/html" id="template">
+            名字叫做：{{name}}<br>
+            来自：{{from}}
+        </script>
 	</div>
+    <script src="static/plugins/template.min.js"></script>
 </body>
 </html>

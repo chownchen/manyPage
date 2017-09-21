@@ -20,7 +20,7 @@ var config = {
 	resolve: {
 		root: [],
          //设置require或import的时候可以不需要带后缀
-        extensions: ['', '.js', '.scss', '.css']
+        extensions: ['', '.js', '.scss', '.css'],
     },
 	module: {
 		loaders: [ 
@@ -72,7 +72,8 @@ var config = {
 	      }
 	    }),
 	    new CopyWebpackPlugin([
-            {from: './src/images', to: './images'} //拷贝图片
+            {from: './src/images', to: './images'}, //拷贝图片
+            {from: './src/static', to: './static'}, //拷贝文件夹
         ])
 	],
 	externals: {
